@@ -1,4 +1,4 @@
-package com.sec.service;
+/*package com.sec.service;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -40,4 +40,4 @@ public class RoleAuthenticationMechanism implements HttpAuthenticationMechanism{
 		return httpMessageContext.doNothing();
 	}
 
-}
+}*/
