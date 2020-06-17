@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+	<title>Java EE Security</title>
+</h:head>
+<h:body>
+	<h1>Soteria</h1>
+	<h:link value="Link to View" outcome="/rsc/jsf/ShowRecord" />
+	<br />
+	<h:form>
+		<h:commandButton action="/rsc/jsf/create" value="create!" />
+		<br />
+		<h:commandButton action="#{servletDispatcher.callReader()}"
+			value="read!" />
+		<br />
+		<h:commandButton action="/rsc/jsf/update" value="update!" />
+		<br />
+		<h:commandButton action="/rsc/jsf/delete.xhtml" value="delete!" />
+		<br />
+	</h:form>
+</h:body>
+</html>
