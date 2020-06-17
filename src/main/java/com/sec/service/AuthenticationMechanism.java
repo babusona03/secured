@@ -1,4 +1,4 @@
-package com.sec.service;
+/*package com.sec.service;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.security.enterprise.AuthenticationException;
@@ -38,4 +38,4 @@ public class AuthenticationMechanism implements HttpAuthenticationMechanism {
         return httpMessageContext.doNothing();
     }
 
-}
+}*/

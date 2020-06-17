@@ -1,2 +1,9 @@
+com/sec/model/Executable.class
+com/sec/model/Role1Executor.class
+com/sec/model/RoleExecutable.class
+com/sec/model/UserActivity.class
+com/sec/model/Role2Executor.class
 com/sec/controller/UserAuthenticationServlet.class
-com/sec/service/AuthenticationMechanism.class
+com/sec/model/Role3Executor.class
+com/sec/controller/UserAuthorizationServlet.class
+com/sec/util/Roles.class
