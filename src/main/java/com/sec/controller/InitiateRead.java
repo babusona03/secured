@@ -3,9 +3,7 @@ package com.sec.controller;
 import java.io.IOException;
 
 import javax.annotation.security.DeclareRoles;
-
-
-
+import javax.ejb.Stateless;
 import javax.security.enterprise.authentication.mechanism.http.BasicAuthenticationMechanismDefinition;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,7 +17,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.glassfish.soteria.identitystores.annotation.Credentials;
 import org.glassfish.soteria.identitystores.annotation.EmbeddedIdentityStoreDefinition;
 
-
 @WebServlet(name = "/InitiateRead", urlPatterns = {"/initread.do"})
 @DeclareRoles({"user","admin","guest"})
 @ServletSecurity(@HttpConstraint(rolesAllowed = {"user","admin"}))
@@ -29,7 +26,6 @@ import org.glassfish.soteria.identitystores.annotation.EmbeddedIdentityStoreDefi
 	@Credentials(callerName = "admin", password = "admin", 		groups = {"admin"}),
 	@Credentials(callerName = "guest", password = "guest", 		groups = {"guest" })}
 )
-
 public class InitiateRead extends HttpServlet {
 
   private static final long serialVersionUID = 1L;
@@ -39,7 +35,7 @@ public class InitiateRead extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	  RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/jsf/read.xhtml");
 	  System.out.println("inside read initiator servlet.");
-	  view.forward(request, response);
+	  //view.forward(request, response);
 
 
   }
