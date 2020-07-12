@@ -20,12 +20,12 @@ import org.glassfish.soteria.identitystores.annotation.EmbeddedIdentityStoreDefi
 @WebServlet(name = "/InitiateRead", urlPatterns = {"/initread.do"})
 @DeclareRoles({"user","admin","guest"})
 @ServletSecurity(@HttpConstraint(rolesAllowed = {"user","admin"}))
-@BasicAuthenticationMechanismDefinition(realmName="secured-basic")
+@BasicAuthenticationMechanismDefinition(realmName="security-realm")
 @EmbeddedIdentityStoreDefinition({
 	@Credentials(callerName = "user",  password = "password", 	groups = {"user" }),
 	@Credentials(callerName = "admin", password = "admin", 		groups = {"admin"}),
-	@Credentials(callerName = "guest", password = "guest", 		groups = {"guest" })}
-)
+	@Credentials(callerName = "guest", password = "guest", 		groups = {"guest"})
+	})
 public class InitiateRead extends HttpServlet {
 
   private static final long serialVersionUID = 1L;

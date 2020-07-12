@@ -1,2 +1,3 @@
 com/sec/service/ContentAuthenticationMechanism.class
-com/sec/controller/InitiateRead.class
+com/sec/controller/InitLogin.class
+com/sec/controller/InitMemstore.class

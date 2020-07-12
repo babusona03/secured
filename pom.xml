@@ -15,11 +15,17 @@
 			<version>8.0</version>
 			<scope>provided</scope>
 		</dependency>
- 		<dependency> 
-     		<groupId>org.glassfish.soteria</groupId> 
-     		<artifactId>jakarta.security.enterprise</artifactId> 
-     		<version>1.0.1</version> 
- 		</dependency>
+<!--  		<dependency>  -->
+<!--      		<groupId>org.glassfish.soteria</groupId>  -->
+<!--      		<artifactId>jakarta.security.enterprise</artifactId>  -->
+<!--      		<version>1.0.1</version>  -->
+<!--  		</dependency> -->
+<!-- 		<dependency> -->
+<!--             <groupId>jakarta.security.enterprise</groupId> -->
+<!--             <artifactId>jakarta.security.enterprise-api</artifactId> -->
+<!--             <version>1.0.1</version> -->
+<!--             <scope>provided</scope> -->
+<!--         </dependency> -->
 <!--  		<dependency> -->
 <!--             <groupId>org.wildfly.security</groupId> -->
 <!--             <artifactId>wildfly-elytron</artifactId> -->
@@ -91,6 +97,19 @@
 <!--     		<artifactId>jakarta.security.enterprise</artifactId> -->
 <!--     		<version>1.0.1</version> -->
 <!-- 		</dependency>	 -->
+<!-- 		<dependency> -->
+<!--             <groupId>jakarta.security.enterprise</groupId> -->
+<!--             <artifactId>jakarta.security.enterprise-api</artifactId> -->
+<!--             <version>1.0.1</version> -->
+<!--         </dependency> -->
+    
+			<dependency>
+  				<groupId>org.glassfish.soteria</groupId>
+  				<artifactId>javax.security.enterprise</artifactId>
+  				<version>1.0</version>
+			</dependency>
+        
+
 
 
 	</dependencies>

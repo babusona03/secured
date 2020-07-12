@@ -1,2 +1,6 @@
+/home/razor/git/secured/src/main/java/com/sec/util/TestIdentityStore.java
 /home/razor/git/secured/src/main/java/com/sec/service/ContentAuthenticationMechanism.java
 /home/razor/git/secured/src/main/java/com/sec/controller/InitiateRead.java
+/home/razor/git/secured/src/main/java/com/sec/controller/InitLogin.java
+/home/razor/git/secured/src/main/java/com/sec/controller/InitMemstore.java
+/home/razor/git/secured/src/main/java/com/sec/util/DbConfig.java
